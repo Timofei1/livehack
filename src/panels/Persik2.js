@@ -14,44 +14,36 @@ import './Persik.css';
 
 const osName = platform();
 
-const Persik = props => (
+const Persik2 = props => (
 	<Panel id={props.id}>
 		<PanelHeader
 			left={<HeaderButton onClick={props.go} data-to="home">
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</HeaderButton>}
 		>
-			Два часа и выспаться
+			Телефон в специальном режиме
 		</PanelHeader>
 		<Group title='Описание лайфхака:'>
 		<Div>
-		<h>После выполнения данного лайфхака, вы уснете и проснетесь через 2 часа уже в бодром состоянии.</h>
+		<h>Для тех, кто сидит с телефоном перед сном.</h>
 		</Div>
 		</Group>
-		<Group title='Примечание'>
+		<Group title='Примечания'>
 		<Div>
-		<h>Лайфхак стоит выполнять в сонном состоянии</h>
+		<h>Примечания отсутствуют</h>
 		</Div>
 		</Group>
 		<Group title='Ход выполнения'>
 		<Div>
-		<h>Выпить чашку кофе перед тем как лечь спать. Вы проснетесь через 2-3 часа уже в бодром состоянии.</h>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
+		<h>Все знают, что не нужно брать телефон в постель из-за синего излучения, которое мешает спать, но все равно берут. Если уж брать телефон, то с включенной темной темой или со специальным "режимом для чтения".</h>
 		</Div>
 		</Group>
     </Panel>
 );
 
-Persik.propTypes = {
+Persik2.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
 };
 
-export default Persik;
+export default Persik2;

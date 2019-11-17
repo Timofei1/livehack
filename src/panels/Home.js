@@ -10,24 +10,100 @@ import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
-		<PanelHeader>Тут был Тимофей Рулонов...</PanelHeader>
-		{fetchedUser &&
-		<Group title="Вы авторизованы под именем:">
-			<Cell
-				before={fetchedUser.photo_200 ? <Avatar src={fetchedUser.photo_200}/> : null}
-				description={fetchedUser.city && fetchedUser.city.title ? fetchedUser.city.title : ''}
-			>
-				{`${fetchedUser.first_name} ${fetchedUser.last_name}`}
-			</Cell>
-		</Group>}
-
-		<Group title="Navigation Example">
+		<PanelHeader>Лайфхакер</PanelHeader>
+		<Group title="Лайфхаки для сна">
 			<Div>
 				<Button size="xl" level="2" onClick={go} data-to="persik">
-					Кликни, там паук валера
+					Два часа и выспаться
+				</Button>
+			<br/>
+			
+				<Button size="xl" level="2" onClick={go} data-to="persik1">
+					Мелкие советы 1
+				</Button>
+			<br/>
+				<Button size="xl" level="2" onClick={go} data-to="persik2">
+					Телефон в специальном режиме
+				</Button>
+			<br/>   
+				<Button size="xl" level="2" onClick={go} data-to="persik3">
+					Мелкие советы 2
 				</Button>
 			</Div>
 		</Group>
+		<Group title="Лайфхаки для телефона">
+			<Div>
+				<Button size="xl" level="2" onClick={go} data-to="persik4">
+					Заблокировать устройство
+				</Button>
+			<br/>
+				<Button size="xl" level="2" onClick={go} data-to="persik5">
+					Прослушка
+				</Button>
+			<br/>
+				<Button size="xl" level="2" onClick={go} data-to="persik6">
+					Стилус в домашних условиях
+				</Button>
+			<br/>
+				<Button size="xl" level="2" onClick={go} data-to="persik7">
+					Действия, при попадании влаги
+				</Button>
+			<br/>   
+				<Button size="xl" level="2" onClick={go} data-to="persik8">
+					Заляпаный экран
+				</Button>
+			</Div>
+		</Group>
+		<Group title="Лайфхаки в интернете">
+			<Div>
+				<Button size="xl" level="2" onClick={go} data-to="persik9">
+					Лайфхак 9
+				</Button>
+			<br/>
+				<Button size="xl" level="2" onClick={go} data-to="persik10">
+					Лайфхак 10
+				</Button>
+			<br/>
+				<Button size="xl" level="2" onClick={go} data-to="persik11">
+					Лайфхак 11
+				</Button>
+			<br/>
+				<Button size="xl" level="2" onClick={go} data-to="persik12">
+					Лайфхак 12
+				</Button>
+			<br/>
+				<Button size="xl" level="2" onClick={go} data-to="persik13">
+					Лайфхак 13
+				</Button>
+			</Div>
+		</Group>
+		<Group title="Лайфхаки для домашки">
+			<Div>
+				<Button size="xl" level="2" onClick={go} data-to="persik14">
+					Как быстро выучить стих
+				</Button>
+			<br/>
+				<Button size="xl" level="2" onClick={go} data-to="persik15">
+					Последовательность выполнения
+				</Button>
+			<br/>
+				<Button size="xl" level="2" onClick={go} data-to="persik16">
+					Перед контрольной
+				</Button>
+			<br/>
+				<Button size="xl" level="2" onClick={go} data-to="persik17">
+					Лайфхак 17
+				</Button>
+			<br/>
+				<Button size="xl" level="2" onClick={go} data-to="persik18">
+					Лайфхак 18
+				</Button>
+				</Div>
+				
+
+
+		</Group>
+
 	</Panel>
 );
 

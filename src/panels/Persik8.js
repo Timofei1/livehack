@@ -14,44 +14,37 @@ import './Persik.css';
 
 const osName = platform();
 
-const Persik = props => (
+const Persik8 = props => (
 	<Panel id={props.id}>
 		<PanelHeader
 			left={<HeaderButton onClick={props.go} data-to="home">
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</HeaderButton>}
 		>
-			Два часа и выспаться
+			Заляпаный экран
 		</PanelHeader>
 		<Group title='Описание лайфхака:'>
 		<Div>
-		<h>После выполнения данного лайфхака, вы уснете и проснетесь через 2 часа уже в бодром состоянии.</h>
+		<h>Многие жалуются на то, что экран постоянно заляпан следами от пальцев, что существенно сказывается на качестве изображений.</h>
 		</Div>
 		</Group>
-		<Group title='Примечание'>
+		<Group title='Примечания'>
 		<Div>
-		<h>Лайфхак стоит выполнять в сонном состоянии</h>
+		<h>Примечания отсутствуют</h>
 		</Div>
 		</Group>
 		<Group title='Ход выполнения'>
 		<Div>
-		<h>Выпить чашку кофе перед тем как лечь спать. Вы проснетесь через 2-3 часа уже в бодром состоянии.</h>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
+		<h>Справиться с этой проблемой очень просто: возьмите ватный диск, смочите его в перекиси и протрите экран. После этого вторым диском удалите остатки жидкости. Перекись не только сделает экран чистым, но и не даст больше ему заляпаться.</h>
+		
 		</Div>
 		</Group>
     </Panel>
 );
 
-Persik.propTypes = {
+Persik8.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
 };
 
-export default Persik;
+export default Persik8;
