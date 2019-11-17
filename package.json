@@ -3,7 +3,7 @@
   "version": "2.1.1",
   "description": "",
   "main": "index.js",
-  "homepage": "https://timofei1.github.io/vk-apps/",
+  "homepage": "https://timofei1.github.io/livehack/",
   "scripts": {
     "start": "cross-env PORT=10888 react-scripts start",
     "build": "react-scripts build",
