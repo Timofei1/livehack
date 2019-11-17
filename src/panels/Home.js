@@ -50,30 +50,30 @@ const Home = ({ id, go, fetchedUser }) => (
 				</Button>
 			<br/>   
 				<Button size="xl" level="2" onClick={go} data-to="persik8">
-					Заляпаный экран
+					Заляпанный экран
 				</Button>
 			</Div>
 		</Group>
 		<Group title="Лайфхаки в интернете">
 			<Div>
 				<Button size="xl" level="2" onClick={go} data-to="persik9">
-					Лайфхак 9
+					Пусто
 				</Button>
 			<br/>
 				<Button size="xl" level="2" onClick={go} data-to="persik10">
-					Лайфхак 10
+					Пусто
 				</Button>
 			<br/>
 				<Button size="xl" level="2" onClick={go} data-to="persik11">
-					Лайфхак 11
+					Пусто
 				</Button>
 			<br/>
 				<Button size="xl" level="2" onClick={go} data-to="persik12">
-					Лайфхак 12
+					Пусто
 				</Button>
 			<br/>
 				<Button size="xl" level="2" onClick={go} data-to="persik13">
-					Лайфхак 13
+					Пусто
 				</Button>
 			</Div>
 		</Group>
@@ -92,11 +92,11 @@ const Home = ({ id, go, fetchedUser }) => (
 				</Button>
 			<br/>
 				<Button size="xl" level="2" onClick={go} data-to="persik17">
-					Лайфхак 17
+					Пусто
 				</Button>
 			<br/>
 				<Button size="xl" level="2" onClick={go} data-to="persik18">
-					Лайфхак 18
+					Пусто
 				</Button>
 				</Div>
 				
