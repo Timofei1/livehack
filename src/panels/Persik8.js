@@ -21,7 +21,7 @@ const Persik8 = props => (
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</HeaderButton>}
 		>
-			Заляпаный экран
+			Заляпанный экран
 		</PanelHeader>
 		<Group title='Описание лайфхака:'>
 		<Div>
