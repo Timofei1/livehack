@@ -27,21 +27,48 @@ const Persik26 = ({ id, go, fetchedUser }) => (
 		<body bgcolor="#FFFFFF">
 		<Group title="Выбор лайфхака">
 			<Div>
-				<Button size="xl" level="2" onClick={go} data-to="persik">
-					Два часа и выспаться
+			    <Button size="xl" level="2" onClick={go} data-to="persik1">
+					Мелкие советы 1
 				</Button>
 			<br/>
-			
-				<Button size="xl" level="2" onClick={go} data-to="persik1">
-					Мелкие советы 1
+			    <Button size="xl" level="2" onClick={go} data-to="persik3">
+					Мелкие советы 2
+				</Button>
+			<br/>
+			    <Button size="xl" level="2" onClick={go} data-to="persik17">
+					Мелкие советы 3
+				</Button>
+			<br/>
+			    <Button size="xl" level="2" onClick={go} data-to="persik18">
+					Мелкие советы 4
 				</Button>
 			<br/>
 				<Button size="xl" level="2" onClick={go} data-to="persik2">
 					Телефон в специальном режиме
 				</Button>
 			<br/>   
-				<Button size="xl" level="2" onClick={go} data-to="persik3">
-					Мелкие советы 2
+			    <Button size="xl" level="2" onClick={go} data-to="persik">
+					Два часа и выспаться
+				</Button>
+			<br/>   
+			    <Button size="xl" level="2" onClick={go} data-to="persik19">
+					Пусто
+				</Button>
+			<br/>   
+			    <Button size="xl" level="2" onClick={go} data-to="persik20">
+					Пусто
+				</Button>
+			<br/>   
+			    <Button size="xl" level="2" onClick={go} data-to="persik21">
+					Пусто
+				</Button>
+			<br/>   
+			    <Button size="xl" level="2" onClick={go} data-to="persik22">
+					Пусто
+				</Button>
+			<br/>   
+			    <Button size="xl" level="2" onClick={go} data-to="persik23">
+					Пусто
 				</Button>
 			</Div>
 		

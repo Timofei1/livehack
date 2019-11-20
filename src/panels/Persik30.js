@@ -27,22 +27,7 @@ const Persik30 = ({ id, go, fetchedUser }) => (
 		<body bgcolor="#FFFFFF">
 		<Group title="Выбор лайфхака">
 			<Div>
-				<Button size="xl" level="2" onClick={go} data-to="persik">
-					Два часа и выспаться
-				</Button>
-			<br/>
-			
-				<Button size="xl" level="2" onClick={go} data-to="persik1">
-					Мелкие советы 1
-				</Button>
-			<br/>
-				<Button size="xl" level="2" onClick={go} data-to="persik2">
-					Телефон в специальном режиме
-				</Button>
-			<br/>   
-				<Button size="xl" level="2" onClick={go} data-to="persik3">
-					Мелкие советы 2
-				</Button>
+				В общем тут пусото. Ждите обновления
 			</Div>
 		
 		

@@ -46,6 +46,36 @@ const Persik27 = ({ id, go, fetchedUser }) => (
 				<Button size="xl" level="2" onClick={go} data-to="persik8">
 					Заляпанный экран
 				</Button>
+				<br/>   
+				<Button size="xl" level="2" onClick={go} data-to="persik8">
+					Пусто
+				</Button>
+				<br/>   
+				<Button size="xl" level="2" onClick={go} data-to="persik8">
+					Пусто
+				</Button>
+				<br/>   
+				<Button size="xl" level="2" onClick={go} data-to="persik8">
+					Пусто
+				</Button>
+				<br/>   
+				<Button size="xl" level="2" onClick={go} data-to="persik8">
+					Пусто
+				</Button>
+				<br/>   
+				<Button size="xl" level="2" onClick={go} data-to="persik8">
+					Пусто
+				</Button>
+				<br/>   
+				<Button size="xl" level="2" onClick={go} data-to="persik8">
+					Пусто
+				</Button>
+				<br/>   
+				<Button size="xl" level="2" onClick={go} data-to="persik8">
+					Пусто
+				</Button>
+				
+
 			</Div>
 		
 				
