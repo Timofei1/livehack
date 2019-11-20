@@ -31,6 +31,11 @@ import Persik22 from './panels/Persik22';
 import Persik23 from './panels/Persik23';
 import Persik24 from './panels/Persik24';
 import Persik25 from './panels/Persik25';
+import Persik26 from './panels/Persik26';
+import Persik27 from './panels/Persik27';
+import Persik28 from './panels/Persik28';
+import Persik29 from './panels/Persik29';
+import Persik30 from './panels/Persik30';
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
@@ -53,8 +58,9 @@ const App = () => {
 		fetchData();
 	}, []);
 
-	const go = e => {
+	const go = (e) => {
 		setActivePanel(e.currentTarget.dataset.to);
+		
 	};
 
 	return (
@@ -86,6 +92,11 @@ const App = () => {
 			<Persik23 id='persik23' go={go} />
 			<Persik24 id='persik24' go={go} />
 			<Persik25 id='persik25' go={go} />
+			<Persik26 id='persik26' go={go} />
+			<Persik27 id='persik27' go={go} />
+			<Persik28 id='persik28' go={go} />
+			<Persik29 id='persik29' go={go} />
+			<Persik30 id='persik30' go={go} />
 
 		</View>
 	);

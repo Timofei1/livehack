@@ -7,103 +7,46 @@ import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
+import url from 'url';
+
+import persik from '../img/persik.png';
+import './Persik.css';
+
+
 
 const Home = ({ id, go, fetchedUser }) => (
+  
 	<Panel id={id}>
+	
 		<PanelHeader>Лайфхакер</PanelHeader>
-		<Group title="Лайфхаки для сна">
+        <body bgcolor="#FFFFFF">
+       <Group title="Выбор категории">
 			<Div>
-				<Button size="xl" level="2" onClick={go} data-to="persik">
-					Два часа и выспаться
+			   
+				<Button size="xl" level="2" onClick={go} data-to="persik26">
+					Лайфхаки для сна
 				</Button>
+				
 			<br/>
 			
-				<Button size="xl" level="2" onClick={go} data-to="persik1">
-					Мелкие советы 1
+				<Button size="xl" level="2" onClick={go} data-to="persik27">
+					Лайфхаки для телефона
 				</Button>
 			<br/>
-				<Button size="xl" level="2" onClick={go} data-to="persik2">
-					Телефон в специальном режиме
+				<Button size="xl" level="2" onClick={go} data-to="persik28">
+					Лайфхаки в интернете
 				</Button>
 			<br/>   
-				<Button size="xl" level="2" onClick={go} data-to="persik3">
-					Мелкие советы 2
+				<Button size="xl" level="2" onClick={go} data-to="persik29">
+					Лайфхаки для домашки
+				</Button>
+			<br/>
+			     <Button size="xl" level="2" onClick={go} data-to="persik30">
+					Бесплатные стикеры
 				</Button>
 			</Div>
-		</Group>
-		<Group title="Лайфхаки для телефона">
-			<Div>
-				<Button size="xl" level="2" onClick={go} data-to="persik4">
-					Заблокировать устройство
-				</Button>
-			<br/>
-				<Button size="xl" level="2" onClick={go} data-to="persik5">
-					Прослушка
-				</Button>
-			<br/>
-				<Button size="xl" level="2" onClick={go} data-to="persik6">
-					Стилус в домашних условиях
-				</Button>
-			<br/>
-				<Button size="xl" level="2" onClick={go} data-to="persik7">
-					Действия, при попадании влаги
-				</Button>
-			<br/>   
-				<Button size="xl" level="2" onClick={go} data-to="persik8">
-					Заляпанный экран
-				</Button>
-			</Div>
-		</Group>
-		<Group title="Лайфхаки в интернете">
-			<Div>
-				<Button size="xl" level="2" onClick={go} data-to="persik9">
-					Пусто
-				</Button>
-			<br/>
-				<Button size="xl" level="2" onClick={go} data-to="persik10">
-					Пусто
-				</Button>
-			<br/>
-				<Button size="xl" level="2" onClick={go} data-to="persik11">
-					Пусто
-				</Button>
-			<br/>
-				<Button size="xl" level="2" onClick={go} data-to="persik12">
-					Пусто
-				</Button>
-			<br/>
-				<Button size="xl" level="2" onClick={go} data-to="persik13">
-					Пусто
-				</Button>
-			</Div>
-		</Group>
-		<Group title="Лайфхаки для домашки">
-			<Div>
-				<Button size="xl" level="2" onClick={go} data-to="persik14">
-					Как быстро выучить стих
-				</Button>
-			<br/>
-				<Button size="xl" level="2" onClick={go} data-to="persik15">
-					Последовательность выполнения
-				</Button>
-			<br/>
-				<Button size="xl" level="2" onClick={go} data-to="persik16">
-					Перед контрольной
-				</Button>
-			<br/>
-				<Button size="xl" level="2" onClick={go} data-to="persik17">
-					Пусто
-				</Button>
-			<br/>
-				<Button size="xl" level="2" onClick={go} data-to="persik18">
-					Пусто
-				</Button>
-				</Div>
-				
-
-
-		</Group>
-
+          </Group>
+        </body>
 	</Panel>
 );
 

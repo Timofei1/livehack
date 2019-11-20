@@ -21,7 +21,7 @@ const Persik9 = props => (
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</HeaderButton>}
 		>
-			Лайфхак №10
+			VPN
 		</PanelHeader>
 		
     </Panel>
