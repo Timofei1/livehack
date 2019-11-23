@@ -6,13 +6,15 @@ import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader
 import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderButton';
 import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
+import Div from '@vkontakte/vkui/dist/components/Div/Div';
+import Group from '@vkontakte/vkui/dist/components/Group/Group';
 
 import persik from '../img/persik.png';
 import './Persik.css';
 
 const osName = platform();
 
-const Persik = props => (
+const Persik23 = props => (
 	<Panel id={props.id}>
 		<PanelHeader
 			left={<HeaderButton onClick={props.go} data-to="home">
@@ -25,9 +27,9 @@ const Persik = props => (
     </Panel>
 );
 
-Persik.propTypes = {
+Persik23.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
 };
 
-export default Persik;
+export default Persik23;

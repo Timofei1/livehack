@@ -45,7 +45,16 @@ const Home = ({ id, go, fetchedUser }) => (
 					Бесплатные стикеры
 				</Button>
 			</Div>
+            <br/>
+            <br/>
+            <center><h>Так же вы можите </h><a href="https://vk.com/vkpay#action=transfer-to-user&user_id=288498260">поддержать проект.</a></center>
+            <br/>
           </Group>
+   
+
+
+
+
         </body>
 	</Panel>
 );
