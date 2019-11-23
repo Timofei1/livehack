@@ -9,6 +9,11 @@ import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 import url from 'url';
 import Icon28Game from '@vkontakte/icons/dist/28/game';
+import Icon24CommentOutline from '@vkontakte/icons/dist/24/comment_outline';
+import Icon24VideoFill from '@vkontakte/icons/dist/24/video_fill';
+import Icon16Spinner from '@vkontakte/icons/dist/16/spinner';
+import Icon20EducationOutline from '@vkontakte/icons/dist/20/education_outline';
+import Icon20GiftOutline from '@vkontakte/icons/dist/20/gift_outline';
 
 import persik from '../img/persik.png';
 import './Persik.css';
@@ -27,28 +32,33 @@ const Home = ({ id, go, fetchedUser }) => (
         </center>
         <br/>
         </Group>
-       <Group title="Выбор категории">
-			<Div>
-			   
-				<Button size="xl" level="2" onClick={go} data-to="persik26">
-				<img src="http://s1.iconbird.com/ico/2014/1/633/w256h2561390856895alarmclock256.png" width="15" height="15"></img>	Лайфхаки для сна
-				</Button>
-				
-			<br/>
+      <Group title="Выбор категории">
+          <Div>
+
+          <Button size="xl" level="2" onClick={go} data-to="persik26" before=
+          <Icon24CommentOutline /> >
+           Лайфхаки для сна
+           </Button>
+
+<br/>
 			
-				<Button size="xl" level="2" onClick={go} data-to="persik27">
+				<Button size="xl" level="2" onClick={go} data-to="persik27" before=
+				<Icon24VideoFill /> >
 					Лайфхаки для телефона
 				</Button>
 			<br/>
-				<Button size="xl" level="2" onClick={go} data-to="persik28">
+				<Button size="xl" level="2" onClick={go} data-to="persik28" before=
+				<Icon16Spinner /> >
 					Лайфхаки в интернете
 				</Button>
 			<br/>   
-				<Button size="xl" level="2" onClick={go} data-to="persik29">
+				<Button size="xl" level="2" onClick={go} data-to="persik29" before=
+				<Icon20EducationOutline />  > 
 					Лайфхаки для домашки
 				</Button>
 			<br/>
-			     <Button size="xl" level="2" onClick={go} data-to="persik30">
+			     <Button size="xl" level="2" onClick={go} data-to="persik30" before=
+			     <Icon20GiftOutline /> >
 					Бесплатные стикеры
 				</Button>
 			</Div>
