@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "04eb917608e3fba05393584ce9eda85c",
+    "revision": "e5256b4149f648d01458219ab39433f6",
     "url": "/livehack/index.html"
   },
   {
