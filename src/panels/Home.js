@@ -8,6 +8,7 @@ import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 import url from 'url';
+import Icon28Game from '@vkontakte/icons/dist/28/game';
 
 import persik from '../img/persik.png';
 import './Persik.css';
@@ -19,12 +20,18 @@ const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
 	
 		<PanelHeader>Лайфхакер</PanelHeader>
-        <body bgcolor="#FFFFFF">
+        
+        <Group>
+        <br/>
+        <center><h><i>Как изпользовать? Выберите нужную вам категорию, а в категории название нужного вам лайфхака.</i></h>
+        </center>
+        <br/>
+        </Group>
        <Group title="Выбор категории">
 			<Div>
 			   
 				<Button size="xl" level="2" onClick={go} data-to="persik26">
-					Лайфхаки для сна
+				<img src="http://s1.iconbird.com/ico/2014/1/633/w256h2561390856895alarmclock256.png" width="15" height="15"></img>	Лайфхаки для сна
 				</Button>
 				
 			<br/>
@@ -55,7 +62,7 @@ const Home = ({ id, go, fetchedUser }) => (
 
 
 
-        </body>
+        
 	</Panel>
 );
 
