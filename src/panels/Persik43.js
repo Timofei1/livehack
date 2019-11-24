@@ -28,7 +28,7 @@ const Persik43 = props => (
 
 		<Div>
 		<h align="left"><Button size="xl" level="3" before=
-		<img src="https://sun9-40.userapi.com/c856524/v856524554/5ca85/9QIJPLEnCdc.jpg" data-post-id="288498260_706" data-post-click-type="post_owner_img" width="50" height="50" class="post_img" /> > Тимофей Рулонов 
+		<img src="https://sun9-38.userapi.com/c857528/v857528209/100a1b/DzjzNpcJ2wg.jpg" data-post-id="288498260_706" data-post-click-type="post_owner_img" width="50" height="50" class="post_img" /> > Тимофей Рулонов 
 		<div class="Cell__description">Основатель</div>
 		</Button></h>
 		</Div>
