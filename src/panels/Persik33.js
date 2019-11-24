@@ -12,7 +12,7 @@ import './Persik.css';
 
 const osName = platform();
 
-const Persik = props => (
+const Persik33 = props => (
 	<Panel id={props.id}>
 		<PanelHeader
 			left={<HeaderButton onClick={props.go} data-to="home">
@@ -25,9 +25,9 @@ const Persik = props => (
     </Panel>
 );
 
-Persik.propTypes = {
+Persik33.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
 };
 
-export default Persik;
+export default Persik33;

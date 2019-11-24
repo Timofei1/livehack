@@ -24,7 +24,7 @@ const Persik29 = ({ id, go, fetchedUser }) => (
 		>
 			Лайфхаки для домашки
 		</PanelHeader>
-		<body bgcolor="#FFFFFF">
+		
 		<Group title="Выбор лайфхака">
 			
 		
@@ -51,7 +51,7 @@ const Persik29 = ({ id, go, fetchedUser }) => (
 				</Div>
 
 		</Group>
-</body>
+
 	</Panel>
 	
 );

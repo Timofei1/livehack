@@ -14,6 +14,9 @@ import Icon24VideoFill from '@vkontakte/icons/dist/24/video_fill';
 import Icon16Spinner from '@vkontakte/icons/dist/16/spinner';
 import Icon20EducationOutline from '@vkontakte/icons/dist/20/education_outline';
 import Icon20GiftOutline from '@vkontakte/icons/dist/20/gift_outline';
+import Icon24AddOutline from '@vkontakte/icons/dist/24/add_outline';
+import Icon12OnlineMobile from '@vkontakte/icons/dist/12/online_mobile';
+import Icon16Users from '@vkontakte/icons/dist/16/users';
 
 import persik from '../img/persik.png';
 import './Persik.css';
@@ -32,7 +35,7 @@ const Home = ({ id, go, fetchedUser }) => (
         </center>
         <br/>
         </Group>
-      <Group title="Выбор категории">
+        <Group title="Выбор категории">
           <Div>
 
           <Button size="xl" level="2" onClick={go} data-to="persik26" before=
@@ -43,7 +46,7 @@ const Home = ({ id, go, fetchedUser }) => (
 <br/>
 			
 				<Button size="xl" level="2" onClick={go} data-to="persik27" before=
-				<Icon24VideoFill /> >
+				<Icon12OnlineMobile width={20} height={20} /> >
 					Лайфхаки для телефона
 				</Button>
 			<br/>
@@ -62,13 +65,22 @@ const Home = ({ id, go, fetchedUser }) => (
 					Бесплатные стикеры
 				</Button>
 			</Div>
-            <br/>
+            
+          </Group>
+       
+          <Group title="Обратная связь">
+          <Div>
+          <Button size="xl" level="2" onClick={go} data-to="persik43" before=
+				<Icon16Users width={20} height={20} />  > 
+					 Разработчики
+				</Button>
+				
+			<br/>
             <br/>
             <center><h>Так же вы можите </h><a href="https://vk.com/vkpay#action=transfer-to-user&user_id=288498260">поддержать проект.</a></center>
             <br/>
+          </Div>
           </Group>
-   
-
 
 
 

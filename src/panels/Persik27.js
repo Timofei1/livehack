@@ -24,7 +24,7 @@ const Persik27 = ({ id, go, fetchedUser }) => (
 		>
 			Лайфхаки для телефона
 		</PanelHeader>
-		<body bgcolor="#FFFFFF">
+		
 		<Group title="Выбор лайфхака">
 			<Div>
 				<Button size="xl" level="2" onClick={go} data-to="persik4">
@@ -82,7 +82,7 @@ const Persik27 = ({ id, go, fetchedUser }) => (
 
 
 		</Group>
-</body>
+
 	</Panel>
 	
 );

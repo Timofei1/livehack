@@ -36,6 +36,19 @@ import Persik27 from './panels/Persik27';
 import Persik28 from './panels/Persik28';
 import Persik29 from './panels/Persik29';
 import Persik30 from './panels/Persik30';
+import Persik31 from './panels/Persik31';
+import Persik32 from './panels/Persik32';
+import Persik33 from './panels/Persik33';
+import Persik34 from './panels/Persik34';
+import Persik35 from './panels/Persik35';
+import Persik36 from './panels/Persik36';
+import Persik37 from './panels/Persik37';
+import Persik38 from './panels/Persik38';
+import Persik39 from './panels/Persik39';
+import Persik40 from './panels/Persik40';
+import Persik41 from './panels/Persik41';
+import Persik42 from './panels/Persik42';
+import Persik43 from './panels/Persik43';
 
 const App = () => {
 	const [activePanel, setActivePanel] = useState('home');
@@ -97,6 +110,21 @@ const App = () => {
 			<Persik28 id='persik28' go={go} />
 			<Persik29 id='persik29' go={go} />
 			<Persik30 id='persik30' go={go} />
+			<Persik31 id='persik31' go={go} />
+			<Persik32 id='persik32' go={go} />
+			<Persik33 id='persik33' go={go} />
+			<Persik34 id='persik34' go={go} />
+			<Persik35 id='persik35' go={go} />
+			<Persik36 id='persik36' go={go} />
+			<Persik37 id='persik37' go={go} />
+			<Persik38 id='persik38' go={go} />
+			<Persik39 id='persik39' go={go} />
+			<Persik40 id='persik40' go={go} />
+			<Persik41 id='persik41' go={go} />
+			<Persik42 id='persik42' go={go} />
+			<Persik43 id='persik43' go={go} />
+			
+
 
 		</View>
 	);
