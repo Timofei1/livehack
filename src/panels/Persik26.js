@@ -35,11 +35,11 @@ const Persik26 = ({ id, go, fetchedUser }) => (
 					Мелкие советы 2
 				</Button>
 			<br/>
-			    <Button size="xl" level="2" onClick={go} data-to="persik17">
+			    <Button size="xl" level="2" onClick={go} data-to="persik34">
 					Мелкие советы 3
 				</Button>
 			<br/>
-			    <Button size="xl" level="2" onClick={go} data-to="persik18">
+			    <Button size="xl" level="2" onClick={go} data-to="persik35">
 					Мелкие советы 4
 				</Button>
 			<br/>
