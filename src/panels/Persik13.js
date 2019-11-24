@@ -17,13 +17,27 @@ const osName = platform();
 const Persik13 = props => (
 	<Panel id={props.id}>
 		<PanelHeader
-			left={<HeaderButton onClick={props.go} data-to="home">
+			left={<HeaderButton onClick={props.go} data-to="persik28">
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</HeaderButton>}
 		>
-			Лайфхак №14
+			Пусто
 		</PanelHeader>
-		
+		<Group title='Описание лайфхака:'>
+		<Div>
+		<h></h>
+		</Div>
+		</Group>
+		<Group title='Примечание:'>
+		<Div>
+		<h></h>
+		</Div>
+		</Group>
+		<Group title='Ход выполнения:'>
+		<Div>
+		<h></h>
+        </Div>
+		</Group>
     </Panel>
 );
 

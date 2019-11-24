@@ -30,7 +30,7 @@ const Persik28 = ({ id, go, fetchedUser }) => (
 		
 			<Div>
 				<Button size="xl" level="2" onClick={go} data-to="persik9">
-					VPN
+					Пусто
 				</Button>
 			<br/>
 				<Button size="xl" level="2" onClick={go} data-to="persik10">
