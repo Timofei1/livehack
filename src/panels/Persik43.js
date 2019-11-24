@@ -27,19 +27,20 @@ const Persik43 = props => (
 		<Group title="">
 
 		<Div>
-		<h align="left"><Button size="xl" level="3" before=
+		<a href="https://vk.com/rulon4ik_official"><h align="left"><Button size="xl" level="3" before=
 		<img src="https://sun9-38.userapi.com/c857528/v857528209/100a1b/DzjzNpcJ2wg.jpg" data-post-id="288498260_706" data-post-click-type="post_owner_img" width="50" height="50" class="post_img" /> > Тимофей Рулонов 
 		<div class="Cell__description">Основатель</div>
-		</Button></h>
+		</Button></h></a>
 		</Div>
         
 		
         
         <Div>
-        <Button size="xl" level="3" before=
+        <a href="https://vk.com/vladimir_vladimirowich_putin"><Button size="xl" level="3" before=
 		<img src="https://sun9-5.userapi.com/c857528/v857528583/fbdd9/ANBlOxOVvNE.jpg" data-post-id="288498260_706" data-post-click-type="post_owner_img" width="50" height="50" class="post_img" /> > Кириллл Малыгин 
 		<div class="Cell__description">Гл. модератор</div>
 		</Button>
+		</a>
         </Div>
         </Group>
         
