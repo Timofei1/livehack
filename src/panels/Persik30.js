@@ -28,11 +28,11 @@ const Persik30 = ({ id, go, fetchedUser }) => (
 		<Group title="Выбор лайфхака">
 			<Div>
 				<Button size="xl" level="2" onClick={go} data-to="persik36">
-					Пусто
+					Украина ВКонтакте
 				</Button>
 			<br/>
 				<Button size="xl" level="2" onClick={go} data-to="persik37">
-					Пусто
+					BOOM VIP
 				</Button>
 			<br/>
 				<Button size="xl" level="2" onClick={go} data-to="persik38">

@@ -6,6 +6,8 @@ import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader
 import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderButton';
 import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
+import Div from '@vkontakte/vkui/dist/components/Div/Div';
+import Group from '@vkontakte/vkui/dist/components/Group/Group'
 
 import persik from '../img/persik.png';
 import './Persik.css';
@@ -21,7 +23,21 @@ const Persik = props => (
 		>
 			Лайфхак №1
 		</PanelHeader>
-		
+		<Group title='Описание лайфхака:'>
+		<Div>
+		<h></h>
+		</Div>
+		</Group>
+		<Group title='Примечание:'>
+		<Div>
+		<h></h>
+		</Div>
+		</Group>
+		<Group title='Ход выполнения:'>
+		<Div>
+		<h></h>
+        </Div>
+		</Group>
     </Panel>
 );
 
