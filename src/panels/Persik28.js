@@ -30,11 +30,11 @@ const Persik28 = ({ id, go, fetchedUser }) => (
 		
 			<Div>
 				<Button size="xl" level="2" onClick={go} data-to="persik9">
-					Пусто
+					VPN
 				</Button>
 			<br/>
 				<Button size="xl" level="2" onClick={go} data-to="persik10">
-					Пусто
+					Vk Messenger
 				</Button>
 			<br/>
 				<Button size="xl" level="2" onClick={go} data-to="persik11">

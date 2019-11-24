@@ -17,6 +17,7 @@ import Icon20GiftOutline from '@vkontakte/icons/dist/20/gift_outline';
 import Icon24AddOutline from '@vkontakte/icons/dist/24/add_outline';
 import Icon12OnlineMobile from '@vkontakte/icons/dist/12/online_mobile';
 import Icon16Users from '@vkontakte/icons/dist/16/users';
+import Icon24Flash from '@vkontakte/icons/dist/24/flash';
 
 import persik from '../img/persik.png';
 import './Persik.css';
@@ -64,6 +65,7 @@ const Home = ({ id, go, fetchedUser }) => (
 			     <Icon20GiftOutline /> >
 					Бесплатные стикеры
 				</Button>
+			
 			</Div>
             
           </Group>
@@ -77,7 +79,7 @@ const Home = ({ id, go, fetchedUser }) => (
 				
 			<br/>
             <br/>
-            <center><h>Так же вы можите </h><a href="https://vk.com/vkpay#action=transfer-to-user&user_id=288498260">поддержать проект.</a></center>
+            <center><h>Так же вы можете </h><a href="https://vk.com/vkpay#action=transfer-to-user&user_id=288498260">поддержать проект.</a></center>
             <br/>
           </Div>
           </Group>

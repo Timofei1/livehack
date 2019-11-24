@@ -24,18 +24,32 @@ const Persik30 = ({ id, go, fetchedUser }) => (
 		>
 			Бесплатные стикеры
 		</PanelHeader>
-		<body bgcolor="#FFFFFF">
+		
 		<Group title="Выбор лайфхака">
 			<Div>
-				В общем тут пусото. Ждите обновления
-			</Div>
-		
-		
-				
+				<Button size="xl" level="2" onClick={go} data-to="persik36">
+					Пусто
+				</Button>
+			<br/>
+				<Button size="xl" level="2" onClick={go} data-to="persik37">
+					Пусто
+				</Button>
+			<br/>
+				<Button size="xl" level="2" onClick={go} data-to="persik38">
+					Пусто
+				</Button>
+			<br/>
+				<Button size="xl" level="2" onClick={go} data-to="persik39">
+					Пусто
+				</Button>
+			<br/>
+				<Button size="xl" level="2" onClick={go} data-to="persik40">
+					Пусто
+				</Button>
+				</Div>
 
-
-		</Group>
-       </body>
+        </Group>
+       
 	</Panel>
 	
 );
