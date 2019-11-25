@@ -76,7 +76,7 @@ const Home = ({ id, go, fetchedUser }) => (
 				<Icon16Users width={20} height={20} />  > 
 					 Разработчики
 				</Button>
-				
+			</Div>
           </Group>
 
 
