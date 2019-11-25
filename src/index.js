@@ -4,10 +4,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import connect from '@vkontakte/vk-connect';
 import App from './App';
+<<<<<<< HEAD
 import registerServiceWorker from './sw';
+=======
+>>>>>>> d249bf853685ae0946aad1ed5d9e6920448a30d3
 
-// Init VK  Mini App
 connect.send('VKWebAppInit');
+<<<<<<< HEAD
 
 // Если вы хотите, чтобы ваше веб-приложение работало в оффлайне и загружалось быстрее,
 // расскомментируйте строку с registerServiceWorker();
@@ -15,4 +18,6 @@ connect.send('VKWebAppInit');
 // Подробнее про сервис воркеры можно почитать тут — https://vk.cc/8MHpmT
 registerServiceWorker();
 
+=======
+>>>>>>> d249bf853685ae0946aad1ed5d9e6920448a30d3
 ReactDOM.render(<App />, document.getElementById('root'));
