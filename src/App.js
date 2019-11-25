@@ -123,9 +123,6 @@ const App = () => {
 			<Persik41 id='persik41' go={go} />
 			<Persik42 id='persik42' go={go} />
 			<Persik43 id='persik43' go={go} />
-			
-
-
 		</View>
 	);
 }
