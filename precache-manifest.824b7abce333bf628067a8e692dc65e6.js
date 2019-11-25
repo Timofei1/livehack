@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aeb04bb01cdde70d2d6e8372d1cfea02",
+    "revision": "f26c1244f12864388a7af2c3aec1c7cb",
     "url": "/livehack/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/livehack/static/css/2.4e89ce74.chunk.css"
   },
   {
-    "revision": "93b5d358fe2d1b70d7bc",
+    "revision": "2b2ec59a3e2a583d5f26",
     "url": "/livehack/static/css/main.981f7211.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/livehack/static/js/2.123f932f.chunk.js"
   },
   {
-    "revision": "93b5d358fe2d1b70d7bc",
-    "url": "/livehack/static/js/main.fc3018cf.chunk.js"
+    "revision": "2b2ec59a3e2a583d5f26",
+    "url": "/livehack/static/js/main.457d0229.chunk.js"
   },
   {
     "revision": "57b007b4d4bec05e05b1",
