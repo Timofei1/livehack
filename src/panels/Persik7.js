@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { platform, IOS } from '@vkontakte/vkui';
+import {platform, IOS} from '@vkontakte/vkui';
 import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderButton';
@@ -15,36 +15,39 @@ import './Persik.css';
 const osName = platform();
 
 const Persik7 = props => (
-	<Panel id={props.id}>
-		<PanelHeader
-			left={<HeaderButton onClick={props.go} data-to="persik27">
-				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
-			</HeaderButton>}
-		>
-			Действия, при попадании влаги
-		</PanelHeader>
-		<Group title='Описание лайфхака:'>
-		<Div>
-		<h>Распространенная проблема – попадание влаги в телефон, например, после дождя или разлитой воды.</h>
-		</Div>
-		</Group>
-		<Group title='Примечание'>
-		<Div>
-		<h>Примечания отсутствуют</h>
-		</Div>
-		</Group>
-		<Group title='Ход выполнения'>
-		<Div>
-		<h>В такой ситуации, главное – не медлить, поэтому сразу же отделите батарею от корпуса. Возьмите миску насыпьте туда рис и полностью погрузите в него телефон и батарею. Рис впитает в себя всю влагу и спасет гаджет. Оставьте все на сутки. Такой метод работает в 60% случаях.</h>
-		
-		</Div>
-		</Group>
+    <Panel id={props.id}>
+        <PanelHeader
+            left={<HeaderButton onClick={props.go} data-to="persik27">
+                {osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
+            </HeaderButton>}
+        >
+            Действия, при попадании влаги
+        </PanelHeader>
+        <Group title='Описание лайфхака:'>
+            <Div>
+                <h>Распространенная проблема – попадание влаги в телефон, например, после дождя или разлитой воды.</h>
+            </Div>
+        </Group>
+        <Group title='Примечание'>
+            <Div>
+                <h>Примечания отсутствуют</h>
+            </Div>
+        </Group>
+        <Group title='Ход выполнения'>
+            <Div>
+                <h>В такой ситуации, главное – не медлить, поэтому сразу же отделите батарею от корпуса. Возьмите миску
+                    насыпьте туда рис и полностью погрузите в него телефон и батарею. Рис впитает в себя всю влагу и
+                    спасет гаджет. Оставьте все на сутки. Такой метод работает в 60% случаях.
+                </h>
+
+            </Div>
+        </Group>
     </Panel>
 );
 
 Persik7.propTypes = {
-	id: PropTypes.string.isRequired,
-	go: PropTypes.func.isRequired,
+    id: PropTypes.string.isRequired,
+    go: PropTypes.func.isRequired,
 };
 
 export default Persik7;

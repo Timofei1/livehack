@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { platform, IOS } from '@vkontakte/vkui';
+import {platform, IOS} from '@vkontakte/vkui';
 import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderButton';
@@ -15,36 +15,39 @@ import './Persik.css';
 const osName = platform();
 
 const Persik6 = props => (
-	<Panel id={props.id}>
-		<PanelHeader
-			left={<HeaderButton onClick={props.go} data-to="persik27">
-				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
-			</HeaderButton>}
-		>
-			Стилус в домашних условиях
-		</PanelHeader>
-		<Group title='Описание лайфхака:'>
-		<Div>
-		<h>Простой и доступный способ сделать самодельный стилус.</h>
-		</Div>
-		</Group>
-		<Group title='Примечание'>
-		<Div>
-		<h>Трубуется карандаш и фольга</h>
-		</Div>
-		</Group>
-		<Group title='Ход выполнения'>
-		<Div>
-		<h>Возьмите обычный карандаш и оберните его небольшим куском фольги, заправив края внутрь. В результате получится стилус, которым можно легко управлять телефоном. Еще стилусом может стать обычная пальчиковая батарейка.</h>
-		
-		</Div>
-		</Group>
+    <Panel id={props.id}>
+        <PanelHeader
+            left={<HeaderButton onClick={props.go} data-to="persik27">
+                {osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
+            </HeaderButton>}
+        >
+            Стилус в домашних условиях
+        </PanelHeader>
+        <Group title='Описание лайфхака:'>
+            <Div>
+                <h>Простой и доступный способ сделать самодельный стилус.</h>
+            </Div>
+        </Group>
+        <Group title='Примечание'>
+            <Div>
+                <h>Трубуется карандаш и фольга</h>
+            </Div>
+        </Group>
+        <Group title='Ход выполнения'>
+            <Div>
+                <h>Возьмите обычный карандаш и оберните его небольшим куском фольги, заправив края внутрь. В результате
+                    получится стилус, которым можно легко управлять телефоном. Еще стилусом может стать обычная
+                    пальчиковая батарейка.
+                </h>
+
+            </Div>
+        </Group>
     </Panel>
 );
 
 Persik6.propTypes = {
-	id: PropTypes.string.isRequired,
-	go: PropTypes.func.isRequired,
+    id: PropTypes.string.isRequired,
+    go: PropTypes.func.isRequired,
 };
 
 export default Persik6;

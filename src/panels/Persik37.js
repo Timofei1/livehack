@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { platform, IOS } from '@vkontakte/vkui';
+import {platform, IOS} from '@vkontakte/vkui';
 import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
 import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderButton';
@@ -15,35 +15,35 @@ import './Persik.css';
 const osName = platform();
 
 const Persik37 = props => (
-	<Panel id={props.id}>
-		<PanelHeader
-			left={<HeaderButton onClick={props.go} data-to="persik30">
-				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
-			</HeaderButton>}
-		>
-			BOOM VIP
-		</PanelHeader>
-		<Group title='Описание лайфхака:'>
-		<Div>
-		<h>Гайд по получению стикеров BOOM VIP</h>
-		</Div>
-		</Group>
-		<Group title='Примечание:'>
-		<Div>
-		<h>Стикеры не совсем бесплатные</h>
-		</Div>
-		</Group>
-		<Group title='Ход выполнения:'>
-		<Div>
-		<h>Скачать приложение BOOM на Android/IOS. Купить подписку на музыку. Стикеры ваши.</h>
-        </Div>
-		</Group>
+    <Panel id={props.id}>
+        <PanelHeader
+            left={<HeaderButton onClick={props.go} data-to="persik30">
+                {osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
+            </HeaderButton>}
+        >
+            BOOM VIP
+        </PanelHeader>
+        <Group title='Описание лайфхака:'>
+            <Div>
+                <h>Гайд по получению стикеров BOOM VIP</h>
+            </Div>
+        </Group>
+        <Group title='Примечание:'>
+            <Div>
+                <h>Стикеры не совсем бесплатные</h>
+            </Div>
+        </Group>
+        <Group title='Ход выполнения:'>
+            <Div>
+                <h>Скачать приложение BOOM на Android/IOS. Купить подписку на музыку. Стикеры ваши.</h>
+            </Div>
+        </Group>
     </Panel>
 );
 
 Persik37.propTypes = {
-	id: PropTypes.string.isRequired,
-	go: PropTypes.func.isRequired,
+    id: PropTypes.string.isRequired,
+    go: PropTypes.func.isRequired,
 };
 
 export default Persik37;

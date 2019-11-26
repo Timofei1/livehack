@@ -7,7 +7,7 @@ import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
-import { platform, IOS } from '@vkontakte/vkui';
+import {platform, IOS} from '@vkontakte/vkui';
 import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
 import HeaderButton from '@vkontakte/vkui/dist/components/HeaderButton/HeaderButton';
@@ -18,41 +18,38 @@ import './Persik.css';
 const osName = platform();
 
 const Persik33 = props => (
-	<Panel id={props.id}>
-		<PanelHeader
-			left={<HeaderButton onClick={props.go} data-to="persik27">
-				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
-			</HeaderButton>}
-		>
-			Пусто
-		</PanelHeader>
-		<Group title='Описание лайфхака:'>
-		<Div>
-		<h></h>
-		</Div>
-		</Group>
-		<Group title='Примечание'>
-		<Div>
-		<h></h>
-		</Div>
-		</Group>
-		<Group title='Ход выполнения'>
-		<Div>
-		<h></h>
-         
+    <Panel id={props.id}>
+        <PanelHeader
+            left={<HeaderButton onClick={props.go} data-to="persik27">
+                {osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
+            </HeaderButton>}
+        >
+            Пусто
+        </PanelHeader>
+        <Group title='Описание лайфхака:'>
+            <Div>
+                <h></h>
+            </Div>
+        </Group>
+        <Group title='Примечание'>
+            <Div>
+                <h></h>
+            </Div>
+        </Group>
+        <Group title='Ход выполнения'>
+            <Div>
+                <h></h>
 
-        
-        
 
-		</Div>
-		</Group>
+            </Div>
+        </Group>
 
     </Panel>
 );
 
 Persik33.propTypes = {
-	id: PropTypes.string.isRequired,
-	go: PropTypes.func.isRequired,
+    id: PropTypes.string.isRequired,
+    go: PropTypes.func.isRequired,
 };
 
 export default Persik33;
