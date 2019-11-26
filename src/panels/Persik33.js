@@ -43,6 +43,13 @@ const Persik33 = props => (
 
             </Div>
         </Group>
+        <Group>
+            <Div>
+                <center>
+                <a href="https://vk.com/topic-189105798_40599476">Открыть комментарии</a>
+                </center>
+            </Div>
+        </Group>
 
     </Panel>
 );

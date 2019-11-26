@@ -38,6 +38,13 @@ const Persik37 = props => (
                 <h>Скачать приложение BOOM на Android/IOS. Купить подписку на музыку. Стикеры ваши.</h>
             </Div>
         </Group>
+        <Group>
+            <Div>
+                <center>
+                <a href="https://vk.com/topic-189105798_40599476">Открыть комментарии</a>
+                </center>
+            </Div>
+        </Group>
     </Panel>
 );
 
