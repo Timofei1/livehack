@@ -12,6 +12,8 @@ import Icon20GiftOutline from '@vkontakte/icons/dist/20/gift_outline';
 import Icon12OnlineMobile from '@vkontakte/icons/dist/12/online_mobile';
 import Icon16Users from '@vkontakte/icons/dist/16/users';
 import './Persik.css';
+import CatalogRender from "./components/CatalogRender/CatalogRender";
+import View from "@vkontakte/vkui/dist/components/View/View";
 
 
 const Home = ({id, go, fetchedUser}) => (
@@ -30,33 +32,31 @@ const Home = ({id, go, fetchedUser}) => (
             <br/>
         </Group>
         <Group title="Выбор категории">
-            <Div>
+                <CatalogRender go={go}/>
+                {/*<Div>*/}
+                {/*<Button size="xl" level="2" onClick={go} data-to="persik26" before={<Icon24CommentOutline/>}>*/}
+                {/*    Лайфхаки для сна*/}
+                {/*</Button>*/}
 
-                <Button size="xl" level="2" onClick={go} data-to="persik26" before={<Icon24CommentOutline/>}>
-                    Лайфхаки для сна
-                </Button>
+                {/*<br/>*/}
 
-                <br/>
-
-                <Button size="xl" level="2" onClick={go} data-to="persik27"
-                        before={<Icon12OnlineMobile width={20} height={20}/>}>
-                    Лайфхаки для телефона
-                </Button>
-                <br/>
-                <Button size="xl" level="2" onClick={go} data-to="persik28" before={<Icon16Spinner/>}>
-                    Лайфхаки в интернете
-                </Button>
-                <br/>
-                <Button size="xl" level="2" onClick={go} data-to="persik29" before={<Icon20EducationOutline/>}>
-                    Лайфхаки для домашки
-                </Button>
-                <br/>
-                <Button size="xl" level="2" onClick={go} data-to="persik30" before={<Icon20GiftOutline/>}>
-                    Бесплатные стикеры
-                </Button>
-
-            </Div>
-
+                {/*<Button size="xl" level="2" onClick={go} data-to="persik27"*/}
+                {/*        before={<Icon12OnlineMobile width={20} height={20}/>}>*/}
+                {/*    Лайфхаки для телефона*/}
+                {/*</Button>*/}
+                {/*<br/>*/}
+                {/*<Button size="xl" level="2" onClick={go} data-to="persik28" before={<Icon16Spinner/>}>*/}
+                {/*    Лайфхаки в интернете*/}
+                {/*</Button>*/}
+                {/*<br/>*/}
+                {/*<Button size="xl" level="2" onClick={go} data-to="persik29" before={<Icon20EducationOutline/>}>*/}
+                {/*    Лайфхаки для домашки*/}
+                {/*</Button>*/}
+                {/*<br/>*/}
+                {/*<Button size="xl" level="2" onClick={go} data-to="persik30" before={<Icon20GiftOutline/>}>*/}
+                {/*    Бесплатные стикеры*/}
+                {/*</Button>*/}
+                {/*</Div>*/}
         </Group>
 
         <Group title="Обратная связь">
