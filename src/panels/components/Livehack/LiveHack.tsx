@@ -5,6 +5,7 @@ import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 // @ts-ignore
 import Icon24Back from '@vkontakte/icons/dist/24/back';
 import LiveHackType from "../../../Types/LiveHackType";
+import PanelEnum from "../../../Enums/PanelEnum";
 
 const osName = platform();
 
@@ -16,9 +17,9 @@ type MyProps = {
  function LiveHack(props: MyProps) {
     console.log("LiveHack",props);
      return (
-         <Panel id={props.liveHack.id}>
+         <Panel id={PanelEnum.LiveHack}>
              <PanelHeader
-                 left={<HeaderButton onClick={props.go} data-to={props.liveHack.id}>
+                 left={<HeaderButton onClick={props.go} data-to={PanelEnum.ListLiveHacks}>
                      {osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
                  </HeaderButton>}
              >
@@ -39,12 +40,12 @@ type MyProps = {
                      {props.liveHack.progress}
                  </Div>
              </Group>
-             {props.liveHack.commentsLink &&
-             <Group>
-                 <Div className="unselectable center">
-                         <a href={props.liveHack.commentsLink}>Открыть комментарии</a>
-                 </Div>
-             </Group>
+             { props.liveHack.commentsLink &&
+                 <Group>
+                     <Div className="unselectable center">
+                             <a href={props.liveHack.commentsLink}>Открыть комментарии</a>
+                     </Div>
+                 </Group>
              }
          </Panel>
      );

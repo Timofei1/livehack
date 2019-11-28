@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import connect from '@vkontakte/vk-connect';
 import App from './App';
 import registerServiceWorker from './sw';
-
+import "./index.css";
 connect.send('VKWebAppInit');
 registerServiceWorker();
 ReactDOM.render(<App />, document.getElementById('root'));

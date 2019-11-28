@@ -14,6 +14,7 @@ import Icon16Users from '@vkontakte/icons/dist/16/users';
 import './Persik.css';
 import CatalogRender from "./components/CatalogRender/CatalogRender";
 import View from "@vkontakte/vkui/dist/components/View/View";
+import PanelEnum from "../Enums/PanelEnum";
 
 
 const Home = ({id, go, fetchedUser}) => (
@@ -32,8 +33,8 @@ const Home = ({id, go, fetchedUser}) => (
             <br/>
         </Group>
         <Group title="Выбор категории">
+            <Div>
                 <CatalogRender go={go}/>
-                {/*<Div>*/}
                 {/*<Button size="xl" level="2" onClick={go} data-to="persik26" before={<Icon24CommentOutline/>}>*/}
                 {/*    Лайфхаки для сна*/}
                 {/*</Button>*/}
@@ -56,19 +57,17 @@ const Home = ({id, go, fetchedUser}) => (
                 {/*<Button size="xl" level="2" onClick={go} data-to="persik30" before={<Icon20GiftOutline/>}>*/}
                 {/*    Бесплатные стикеры*/}
                 {/*</Button>*/}
-                {/*</Div>*/}
+                </Div>
         </Group>
 
         <Group title="Обратная связь">
             <Div>
-                <Button size="xl" level="2" onClick={go} data-to="persik43"
+                <Button size="xl" level="2" onClick={go} data-to={PanelEnum.Developers}
                         before={<Icon16Users width={20} height={20}/>}>
                     Разработчики
                 </Button>
             </Div>
         </Group>
-
-
     </Panel>
 );
 

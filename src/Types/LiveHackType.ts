@@ -2,7 +2,8 @@ import LiveHackCatalogEnum from "../Enums/LiveHackCatalogEnum";
 
 type LiveHackType = {
     type: LiveHackCatalogEnum,
-    id: string, //Название панели
+    id: string, //Id панели
+    idBack?: string, //Id каталога
     commentsLink?: string, //Ссылка на комментарии
     name: string, //Название на кнопке
     title: string, //Описание лайфхака

@@ -12,14 +12,15 @@ import Button from '@vkontakte/vkui/dist/components/Button/Button';
 
 import persik from '../img/persik.png';
 import './Persik.css';
+import PanelEnum from "../Enums/PanelEnum";
 
 const osName = platform();
 
-const Persik43 = props => (
+const Developments = props => (
 	<Panel id={props.id}>
 		<PanelHeader
 			left = {
-				<HeaderButton onClick={props.go} data-to="home">
+				<HeaderButton onClick={props.go} data-to={PanelEnum.Home}>
 					{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 				</HeaderButton>
 			}>
@@ -74,9 +75,9 @@ const Persik43 = props => (
     </Panel>
 );
 
-Persik43.propTypes = {
+Developments.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
 };
 
-export default Persik43;
+export default Developments;
