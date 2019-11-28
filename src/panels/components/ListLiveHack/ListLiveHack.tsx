@@ -7,56 +7,63 @@ import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
 import Icon24Back from '@vkontakte/icons/dist/24/back';
 import CatalogType from "../../../Types/CatalogType";
 import PanelEnum from "../../../Enums/PanelEnum";
+import {setCurrentLiveHack} from "../../../store/actions/app";
+import {connect} from "react-redux";
 
 const osName = platform();
 
-
-type MyProps = {
-    go: any;
-    catalogs: CatalogType[];
+function setCurrentLiveHackAndGo(props: any, liveHack: LiveHackType, e: any) {
+    console.log("Тута", props, e, liveHack);
+    props.setCurrentLiveHack(liveHack);
+    props.go(e);
 }
 
-function LiveHackButtonRender(go: any, liveHacks: LiveHackType[]) {
-    console.log("LiveHackButtonRender",liveHacks);
-    return liveHacks.map(liveHack => {
+
+function LiveHackButtonRender(props: MyProps) {
+    console.log("LiveHackButtonRender",props);
+    return props.currentCatalog.liveHacks.map(liveHack => {
         return (
-            <Button size="xl" level="2" onClick={go} data-to={PanelEnum.LiveHack}>
-                {liveHack.name}
-            </Button>
+            <Div>
+                <Button size="xl" level="2" onClick={(e) => setCurrentLiveHackAndGo(props, liveHack, e)} data-to={PanelEnum.LiveHack}>
+                    {liveHack.name}
+                </Button>
+            </Div>
         );
     });
 }
 
-function ListLiveHackRender(props: MyProps) {
-    console.log(props);
-    return props.catalogs.map(catalog => {
-        return ListLiveHack({catalog, go: props.go});
-    });
-}
-
-type MyPropsOnly = {
+type MyProps = {
     go: any;
-    catalog: CatalogType;
+    currentCatalog: CatalogType;
+    setCurrentLiveHack: any;
 }
 
-export function ListLiveHack(props: MyPropsOnly) {
-    console.log("ListLiveHack", props);
+export function ListLiveHack(props: MyProps) {
     return (
             <Panel id={PanelEnum.ListLiveHacks}>
                 <PanelHeader
-                    left={<HeaderButton onClick={props.go} data-to={PanelEnum.Home}>
-                        {osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
-                    </HeaderButton>}
+                    left={
+                        <HeaderButton onClick={props.go} data-to={PanelEnum.Home}>
+                            {osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
+                        </HeaderButton>
+                    }
                 >
-                    {props.catalog.name}
+                    {props.currentCatalog.name}
                 </PanelHeader>
                 <Group title="Выбор лайфхака">
                     <Div>
-                        {LiveHackButtonRender(props.go, props.catalog.liveHacks)}
+                        {LiveHackButtonRender(props)}
                     </Div>
                 </Group>
             </Panel>
     );
 }
 
-export default ListLiveHackRender;
+function mapDispatchToProps(dispatch: any) {
+    return {
+        setCurrentLiveHack: (liveHack: LiveHackType) => dispatch(setCurrentLiveHack(liveHack)),
+    }
+}
+
+// @ts-ignore
+export default connect(null, mapDispatchToProps)(ListLiveHack);

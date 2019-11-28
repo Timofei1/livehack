@@ -19,7 +19,7 @@ function getCatalog(type: LiveHackCatalogEnum, name: string, icon: any): Catalog
 }
 
 const Catalogs: CatalogType[] = [
-        getCatalog(LiveHackCatalogEnum.ЛайфхакиДляСна, "Лайфхаки для сна", Icon24CommentOutline)
+    getCatalog(LiveHackCatalogEnum.ЛайфхакиДляСна, "Лайфхаки для сна", Icon24CommentOutline)
 ];
 
 export default Catalogs;

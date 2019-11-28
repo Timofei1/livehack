@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { platform, IOS } from '@vkontakte/vkui';
 import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
@@ -9,10 +8,8 @@ import Icon24Back from '@vkontakte/icons/dist/24/back';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Button from '@vkontakte/vkui/dist/components/Button/Button';
-
-import persik from '../img/persik.png';
-import './Persik.css';
 import PanelEnum from "../Enums/PanelEnum";
+import {connect} from "react-redux";
 
 const osName = platform();
 
@@ -36,10 +33,10 @@ const Developments = props => (
 								 data-post-click-type="post_owner_img"
 								 width="50"
 								 height="50"
-								 class="post_img"/>
+								 className="post_img"/>
 						}>
 							Тимофей Рулонов
-							<div class="Cell__description">
+							<div className="Cell__description">
 							Основатель
 							</div>
 						</Button>
@@ -55,10 +52,10 @@ const Developments = props => (
 						data-post-click-type="post_owner_img"
 						width="50"
 						height="50"
-						class="post_img"/>
+						className="post_img"/>
 				}>
 					Кириллл Малыгин
-					<div class="Cell__description">Гл. модератор</div>
+					<div className="Cell__description">Гл. модератор</div>
 				</Button>
 		</a>
 	</Div>
@@ -74,10 +71,9 @@ const Developments = props => (
         </Group>
     </Panel>
 );
-
-Developments.propTypes = {
-	id: PropTypes.string.isRequired,
-	go: PropTypes.func.isRequired,
-};
-
-export default Developments;
+function mapStateToProps(state) {
+	return {
+		go: state.app.go
+	}
+}
+export default connect(mapStateToProps)(Developments);

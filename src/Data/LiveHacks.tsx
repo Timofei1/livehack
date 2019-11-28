@@ -51,6 +51,14 @@ const LiveHacks: LiveHackType[] = [
         undefined,
         persik1,
         "https://vk.com/topic-189105798_40599476"
+    ),
+    getLiveHacks(
+        LiveHackCatalogEnum.ЛайфхакиДляСна,
+        "Мелкие советы 2",
+        "Советы 2.",
+        "Какахи",
+        persik1,
+        "https://vk.com/topic-189105798_40599476"
     )
 ];
 

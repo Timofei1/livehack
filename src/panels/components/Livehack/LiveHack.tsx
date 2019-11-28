@@ -10,7 +10,7 @@ import PanelEnum from "../../../Enums/PanelEnum";
 const osName = platform();
 
 type MyProps = {
-    liveHack: LiveHackType;
+    currentLiveHack: LiveHackType;
     go: any;
     id: string;
 }
@@ -23,27 +23,27 @@ type MyProps = {
                      {osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
                  </HeaderButton>}
              >
-                 {props.liveHack.title}
+                 {props.currentLiveHack.title}
              </PanelHeader>
              <Group title='Описание лайфхака:'>
                  <Div className="unselectable">
-                     {props.liveHack.title}
+                     {props.currentLiveHack.title}
                  </Div>
              </Group>
              <Group title='Примечание'>
                  <Div className="unselectable">
-                     {props.liveHack.description}
+                     {props.currentLiveHack.description}
                  </Div>
              </Group>
              <Group title='Ход выполнения'>
                  <Div className="unselectable">
-                     {props.liveHack.progress}
+                     {props.currentLiveHack.progress}
                  </Div>
              </Group>
-             { props.liveHack.commentsLink &&
+             { props.currentLiveHack.commentsLink &&
                  <Group>
                      <Div className="unselectable center">
-                             <a href={props.liveHack.commentsLink}>Открыть комментарии</a>
+                         <a href={props.currentLiveHack.commentsLink}>Открыть комментарии</a>
                      </Div>
                  </Group>
              }
@@ -51,4 +51,5 @@ type MyProps = {
      );
  }
 
+// @ts-ignore
 export default LiveHack;
