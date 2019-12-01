@@ -9,14 +9,15 @@ import Developers from "./panels/Developments";
 import PanelEnum from "./Enums/PanelEnum";
 import {setCurrentLiveHack, setGo} from "./store/actions/app";
 import {connect} from "react-redux";
-import Epic from "@vkontakte/vkui/src/components/Epic/Epic";
-import TabbarItem from "@vkontakte/vkui/dist/es6/components/TabbarItem/TabbarItem";
+
 import Icon28Newsfeed from '@vkontakte/icons/dist/28/newsfeed';
 import Icon28Search from '@vkontakte/icons/dist/28/search';
 import Icon28Messages from '@vkontakte/icons/dist/28/messages';
 import Icon28Notifications from '@vkontakte/icons/dist/28/notifications';
 import Icon28More from '@vkontakte/icons/dist/28/more';
 import Tabbar from "@vkontakte/vkui/src/components/Tabbar/Tabbar";
+import Epic from "@vkontakte/vkui/src/components/Epic/Epic";
+import TabbarItem from "@vkontakte/vkui/src/components/TabbarItem/TabbarItem";
 const App = (props) => {
 	console.log("App",props);
 	const [activePanel, setActivePanel] = useState(PanelEnum.Home);
@@ -45,48 +46,46 @@ const App = (props) => {
 		}
 		fetchData().then();
 	}, []);
-
-
-
 	return (
-		<Epic>
+		<Epic activeStory={activeStory} tabbar={
 			<Tabbar>
 				<TabbarItem
 					onClick={onStoryChange}
-					selected={this.state.activeStory === 'feed'}
+					selected={activeStory === 'feed'}
 					data-story="feed"
 					text="Новости"
 				><Icon28Newsfeed /></TabbarItem>
 				<TabbarItem
 					onClick={onStoryChange}
-					selected={this.state.activeStory === 'discover'}
+					selected={activeStory === 'discover'}
 					data-story="discover"
 					text="Поиск"
 				><Icon28Search /></TabbarItem>
 				<TabbarItem
 					onClick={onStoryChange}
-					selected={this.state.activeStory === 'messages'}
+					selected={activeStory === 'messages'}
 					data-story="messages"
 					label="12"
 					text="Сообщения"
 				><Icon28Messages /></TabbarItem>
 				<TabbarItem
 					onClick={onStoryChange}
-					selected={this.state.activeStory === 'notifications'}
+					selected={activeStory === 'notifications'}
 					data-story="notifications"
 					text="Уведомлен."
 				><Icon28Notifications /></TabbarItem>
 				<TabbarItem
 					onClick={onStoryChange}
-					selected={this.state.activeStory === 'more'}
+					selected={activeStory === 'more'}
 					data-story="more"
 					text="Ещё"
 				><Icon28More /></TabbarItem>
 			</Tabbar>
+		}>
 			<View activePanel={activePanel} popout={popout}>
 				<Home id={PanelEnum.Home} fetchedUser={fetchedUser} />
-				<ListLiveHack go={props.go} id={PanelEnum.ListLiveHacks} currentCatalog={props.currentCatalog}/>
-				<LiveHack go={props.go} id={PanelEnum.LiveHack} currentLiveHack={props.currentLiveHack}/>
+				<ListLiveHack id={PanelEnum.ListLiveHacks} go={props.go}  currentCatalog={props.currentCatalog}/>
+				<LiveHack id={PanelEnum.LiveHack} go={props.go}  currentLiveHack={props.currentLiveHack}/>
 				<Developers id={PanelEnum.Developers}/>
 			</View>
 		</Epic>
