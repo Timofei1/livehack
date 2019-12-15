@@ -2,7 +2,6 @@ import 'core-js/features/map';
 import 'core-js/features/set';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import connect from '@vkontakte/vk-connect';
 import App from './App';
 import registerServiceWorker from './sw';
 import "./index.css";
@@ -11,7 +10,8 @@ import {applyMiddleware, createStore} from "redux";
 import  {composeWithDevTools} from "redux-devtools-extension"
 import rootReducer from "./store/reducers/rootReducer";
 import thunk from 'redux-thunk';
-connect.send('VKWebAppInit');
+import vk_app from "./api";
+vk_app.initApp();
 registerServiceWorker();
 const store = createStore(
     rootReducer,

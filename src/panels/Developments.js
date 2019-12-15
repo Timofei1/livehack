@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { platform, IOS } from '@vkontakte/vkui';
 import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
 import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
@@ -10,10 +10,22 @@ import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Button from '@vkontakte/vkui/dist/components/Button/Button';
 import PanelEnum from "../Enums/PanelEnum";
 import {connect} from "react-redux";
+import vk_app from "../api";
 
 const osName = platform();
+const getId = async function (setId) {
+	const userInfo = await vk_app.getUserInfo();
+	setId(userInfo.id);
+	console.log(userInfo.id);
+};
 
-const Developments = props => (
+
+const Developments = props => {
+	const [id, setId] = useState(0);
+	useEffect(() => {
+		getId(setId);
+	},[]);
+	return(
 	<Panel id={props.id}>
 		<PanelHeader
 			left = {
@@ -36,6 +48,10 @@ const Developments = props => (
 								 className="post_img"/>
 						}>
 							Тимофей Рулонов
+							{
+								id === 288498260 &&
+									<button>Тест кнопка</button>
+							}
 							<div className="Cell__description">
 							Основатель
 							</div>
@@ -58,19 +74,21 @@ const Developments = props => (
 					<div className="Cell__description">Гл. модератор</div>
 				</Button>
 		</a>
-	</Div>
-	</Group>
-        <Group>
-			<center>
-				<br/>
-				<h>Вы можете помочь приложению </h>
-				<a href="https://vk.com/topic-189105798_40593021">предложив свои лайфхаки</a>
-				<br/>
-				<br/>
-			</center>
-        </Group>
-    </Panel>
-);
+		</Div>
+		</Group>
+			<Group>
+				<center>
+					<br/>
+					<h>Вы можете помочь приложению </h>
+					<a href="https://vk.com/topic-189105798_40593021">предложив свои лайфхаки</a>
+					<br/>
+					<br/>
+				</center>
+			</Group>
+		</Panel>
+	);
+};
+
 function mapStateToProps(state) {
 	return {
 		go: state.app.go
