@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/livehack/static/css/main.34a74afe.chunk.css",
-    "main.js": "/livehack/static/js/main.f5093b89.chunk.js",
-    "main.js.map": "/livehack/static/js/main.f5093b89.chunk.js.map",
+    "main.js": "/livehack/static/js/main.a2828c53.chunk.js",
+    "main.js.map": "/livehack/static/js/main.a2828c53.chunk.js.map",
     "runtime-main.js": "/livehack/static/js/runtime-main.6e5a306b.js",
     "runtime-main.js.map": "/livehack/static/js/runtime-main.6e5a306b.js.map",
     "static/css/2.70e03ba6.chunk.css": "/livehack/static/css/2.70e03ba6.chunk.css",
-    "static/js/2.c2b1e37f.chunk.js": "/livehack/static/js/2.c2b1e37f.chunk.js",
-    "static/js/2.c2b1e37f.chunk.js.map": "/livehack/static/js/2.c2b1e37f.chunk.js.map",
+    "static/js/2.c0c3e711.chunk.js": "/livehack/static/js/2.c0c3e711.chunk.js",
+    "static/js/2.c0c3e711.chunk.js.map": "/livehack/static/js/2.c0c3e711.chunk.js.map",
     "index.html": "/livehack/index.html",
-    "precache-manifest.1e1245ea63e600d2babf8789cc6f6c4d.js": "/livehack/precache-manifest.1e1245ea63e600d2babf8789cc6f6c4d.js",
+    "precache-manifest.72ca275fc265bdefc908b011c1cb466d.js": "/livehack/precache-manifest.72ca275fc265bdefc908b011c1cb466d.js",
     "service-worker.js": "/livehack/service-worker.js",
     "static/css/2.70e03ba6.chunk.css.map": "/livehack/static/css/2.70e03ba6.chunk.css.map",
     "static/css/main.34a74afe.chunk.css.map": "/livehack/static/css/main.34a74afe.chunk.css.map",
-    "static/js/2.c2b1e37f.chunk.js.LICENSE.txt": "/livehack/static/js/2.c2b1e37f.chunk.js.LICENSE.txt"
+    "static/js/2.c0c3e711.chunk.js.LICENSE.txt": "/livehack/static/js/2.c0c3e711.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6e5a306b.js",
     "static/css/2.70e03ba6.chunk.css",
-    "static/js/2.c2b1e37f.chunk.js",
+    "static/js/2.c0c3e711.chunk.js",
     "static/css/main.34a74afe.chunk.css",
-    "static/js/main.f5093b89.chunk.js"
+    "static/js/main.a2828c53.chunk.js"
   ]
 }

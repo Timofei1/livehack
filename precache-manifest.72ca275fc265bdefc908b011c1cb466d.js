@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4e37d9da8ef9c3e9db7778b0d5a7ed06",
+    "revision": "7a914c4c36f82e92b129981f392fbae0",
     "url": "/livehack/index.html"
   },
   {
-    "revision": "8353e94d077f53eef2b0",
+    "revision": "38a3fc31ef39c9d75759",
     "url": "/livehack/static/css/2.70e03ba6.chunk.css"
   },
   {
-    "revision": "a01dbec9bf9e4eca894c",
+    "revision": "32ea4b29948d7ed731b5",
     "url": "/livehack/static/css/main.34a74afe.chunk.css"
   },
   {
-    "revision": "8353e94d077f53eef2b0",
-    "url": "/livehack/static/js/2.c2b1e37f.chunk.js"
+    "revision": "38a3fc31ef39c9d75759",
+    "url": "/livehack/static/js/2.c0c3e711.chunk.js"
   },
   {
     "revision": "99bd0487192ec9e7d9ee8fbbd91ee444",
-    "url": "/livehack/static/js/2.c2b1e37f.chunk.js.LICENSE.txt"
+    "url": "/livehack/static/js/2.c0c3e711.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a01dbec9bf9e4eca894c",
-    "url": "/livehack/static/js/main.f5093b89.chunk.js"
+    "revision": "32ea4b29948d7ed731b5",
+    "url": "/livehack/static/js/main.a2828c53.chunk.js"
   },
   {
     "revision": "c0a0e669bc659d5643f3",
