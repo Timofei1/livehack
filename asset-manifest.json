@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/livehack/static/css/main.34a74afe.chunk.css",
-    "main.js": "/livehack/static/js/main.cc232d8c.chunk.js",
-    "main.js.map": "/livehack/static/js/main.cc232d8c.chunk.js.map",
+    "main.js": "/livehack/static/js/main.f5093b89.chunk.js",
+    "main.js.map": "/livehack/static/js/main.f5093b89.chunk.js.map",
     "runtime-main.js": "/livehack/static/js/runtime-main.6e5a306b.js",
     "runtime-main.js.map": "/livehack/static/js/runtime-main.6e5a306b.js.map",
     "static/css/2.70e03ba6.chunk.css": "/livehack/static/css/2.70e03ba6.chunk.css",
     "static/js/2.c2b1e37f.chunk.js": "/livehack/static/js/2.c2b1e37f.chunk.js",
     "static/js/2.c2b1e37f.chunk.js.map": "/livehack/static/js/2.c2b1e37f.chunk.js.map",
     "index.html": "/livehack/index.html",
-    "precache-manifest.3342616992abf33c22ba187fc73b7c43.js": "/livehack/precache-manifest.3342616992abf33c22ba187fc73b7c43.js",
+    "precache-manifest.1e1245ea63e600d2babf8789cc6f6c4d.js": "/livehack/precache-manifest.1e1245ea63e600d2babf8789cc6f6c4d.js",
     "service-worker.js": "/livehack/service-worker.js",
     "static/css/2.70e03ba6.chunk.css.map": "/livehack/static/css/2.70e03ba6.chunk.css.map",
     "static/css/main.34a74afe.chunk.css.map": "/livehack/static/css/main.34a74afe.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.70e03ba6.chunk.css",
     "static/js/2.c2b1e37f.chunk.js",
     "static/css/main.34a74afe.chunk.css",
-    "static/js/main.cc232d8c.chunk.js"
+    "static/js/main.f5093b89.chunk.js"
   ]
 }
