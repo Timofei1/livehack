@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/livehack/static/css/main.ee6f3cf1.chunk.css",
-    "main.js": "/livehack/static/js/main.1761af02.chunk.js",
-    "main.js.map": "/livehack/static/js/main.1761af02.chunk.js.map",
-    "runtime-main.js": "/livehack/static/js/runtime-main.83cf8027.js",
-    "runtime-main.js.map": "/livehack/static/js/runtime-main.83cf8027.js.map",
-    "static/css/2.9f63dd42.chunk.css": "/livehack/static/css/2.9f63dd42.chunk.css",
-    "static/js/2.a8cf1100.chunk.js": "/livehack/static/js/2.a8cf1100.chunk.js",
-    "static/js/2.a8cf1100.chunk.js.map": "/livehack/static/js/2.a8cf1100.chunk.js.map",
+    "main.css": "/livehack/static/css/main.159ac38d.chunk.css",
+    "main.js": "/livehack/static/js/main.6eaebefd.chunk.js",
+    "main.js.map": "/livehack/static/js/main.6eaebefd.chunk.js.map",
+    "runtime-main.js": "/livehack/static/js/runtime-main.c604de7c.js",
+    "runtime-main.js.map": "/livehack/static/js/runtime-main.c604de7c.js.map",
+    "static/css/2.2cfa1b23.chunk.css": "/livehack/static/css/2.2cfa1b23.chunk.css",
+    "static/js/2.9e44352d.chunk.js": "/livehack/static/js/2.9e44352d.chunk.js",
+    "static/js/2.9e44352d.chunk.js.map": "/livehack/static/js/2.9e44352d.chunk.js.map",
     "index.html": "/livehack/index.html",
-    "precache-manifest.48ebbb77b0efeff68ce8944f6c9defd7.js": "/livehack/precache-manifest.48ebbb77b0efeff68ce8944f6c9defd7.js",
+    "precache-manifest.42ffc1ee7f4459c1fe532bbb174dec83.js": "/livehack/precache-manifest.42ffc1ee7f4459c1fe532bbb174dec83.js",
     "service-worker.js": "/livehack/service-worker.js",
-    "static/css/2.9f63dd42.chunk.css.map": "/livehack/static/css/2.9f63dd42.chunk.css.map",
-    "static/css/main.ee6f3cf1.chunk.css.map": "/livehack/static/css/main.ee6f3cf1.chunk.css.map",
-    "static/js/2.a8cf1100.chunk.js.LICENSE.txt": "/livehack/static/js/2.a8cf1100.chunk.js.LICENSE.txt"
+    "static/css/2.2cfa1b23.chunk.css.map": "/livehack/static/css/2.2cfa1b23.chunk.css.map",
+    "static/css/main.159ac38d.chunk.css.map": "/livehack/static/css/main.159ac38d.chunk.css.map",
+    "static/js/2.9e44352d.chunk.js.LICENSE.txt": "/livehack/static/js/2.9e44352d.chunk.js.LICENSE.txt",
+    "static/media/persik.png": "/livehack/static/media/persik.49e2f0ce.png",
+    "static/media/persik1.png": "/livehack/static/media/persik1.4de00b32.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.83cf8027.js",
-    "static/css/2.9f63dd42.chunk.css",
-    "static/js/2.a8cf1100.chunk.js",
-    "static/css/main.ee6f3cf1.chunk.css",
-    "static/js/main.1761af02.chunk.js"
+    "static/js/runtime-main.c604de7c.js",
+    "static/css/2.2cfa1b23.chunk.css",
+    "static/js/2.9e44352d.chunk.js",
+    "static/css/main.159ac38d.chunk.css",
+    "static/js/main.6eaebefd.chunk.js"
   ]
 }
